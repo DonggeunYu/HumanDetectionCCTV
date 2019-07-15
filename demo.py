@@ -3,10 +3,8 @@
 
 from __future__ import division, print_function, absolute_import
 
-import os
 from timeit import time
 import warnings
-import sys
 import cv2
 import numpy as np
 from PIL import Image
@@ -17,7 +15,6 @@ from deep_sort import nn_matching
 from deep_sort.detection import Detection
 from deep_sort.tracker import Tracker
 from tools import generate_detections as gdet
-from deep_sort.detection import Detection as ddet
 warnings.filterwarnings('ignore')
 
 def main(yolo):

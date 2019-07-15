@@ -34,9 +34,20 @@ python3 client.py
     
 매우 실행이 잘 될 것이다.
 
-#### 실제 작동 모습
+### 실제 작동 모습
 맥북을 서버로 사용하였고 서버에는 흰색 박스로 사람이 감지된다는 것을 알려준다.
 ![](https://github.com/Yudonggeun/embedded_project_2019/blob/master/image/communication.JPG)
 
-### 실험
+## 실험
 가벼운 OpenCV와 비교를 위해서 실험을 진행하였다. OpenCV는 'haarcascade_fullbody.xml'를 사용하였다. 하얀색 박스가 YOLOv3이고 검은색 박스가 OpenCV이다.
+왼쪽 사진의 경우 소화기 표시가 사람 몸으로 인식되었다. 오른쪽 사진은 책장 쪽이 사람 몸으로 인식되는 것을 확인할 수 있었다.
+![](https://github.com/Yudonggeun/embedded_project_2019/blob/master/image/demo.png)
+
+### 직접 테스트
+demo를 통해서 직접 비교해볼 수 있다. 통신이 아닌 한 컴퓨터에서만 가능하다.
+~~~
+python3 demo.py
+~~~
+
+## Reference
+YOLOv3 Human detection: [Qidian213/deep_sort_yolov3](https://github.com/Qidian213/deep_sort_yolov3)

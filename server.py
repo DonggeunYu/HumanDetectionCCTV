@@ -87,7 +87,6 @@ while True:
                 bbox = track.to_tlbr()
                 # 사람 위치 Box로 표시하기
                 cv2.rectangle(source, (int(bbox[0]), int(bbox[1])), (int(bbox[2]), int(bbox[3])), (255, 255, 255), 2)
-                # cv2.putText(frame, str(track.track_id),(int(bbox[0]), int(bbox[1])),0, 5e-3 * 200, (0,255,0),2)
                 # 사람이 1명보다 많다고 인식 될 때
                 if len(np.shape(boxes)) > 1:
                     print('human')
